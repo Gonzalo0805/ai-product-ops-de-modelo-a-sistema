@@ -1,5 +1,11 @@
 import streamlit as st
-from .utils.economics import CostInputs, compute_costs
+import sys
+import os
+
+# Añadir ruta raíz del proyecto
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from utils.economics import CostInputs, compute_costs
 
 st.title("Simulador: “La trampa de la optimización” (TI vs SI)")
 st.write("Demuestra cómo bajar el coste de API (TI) puede disparar el coste total (SI) por retrabajo humano.")
