@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.economics import CostInputs, compute_costs
+from .utils.economics import CostInputs, compute_costs
 
 st.title("Simulador: “La trampa de la optimización” (TI vs SI)")
 st.write("Demuestra cómo bajar el coste de API (TI) puede disparar el coste total (SI) por retrabajo humano.")
